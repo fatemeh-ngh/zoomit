@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: iransans;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    width: auto;
+    height: auto;
+    position: sticky;
+    z-index: 105;
+    height: 40px;
+}
+header i{
+    color: #fff;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: #cccccc;
+    padding: 0 6px;
+    font-size: 0.55rem;
+    border-left: 1.5px solid #2d2d2d;
+}
+nav ul li:last-child a{
+    border-left: none;
+}
+.menu-logo{
+    color: #cccccc;
+    width: 30px;
+    height: 20px;
+    margin-right:20px;
+    padding: 1px 1px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.logo-img{
+    margin-right: 80px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icons{
+    margin-left: 80px;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+.icons i{
+    color: #cccccc;
+    width: 5px;
+    margin: 9px;
+    cursor: pointer;
+}
