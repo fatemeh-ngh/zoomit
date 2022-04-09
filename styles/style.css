@@ -3,7 +3,7 @@
     margin: 0;
     font-family: iransans;
 }
-header{
+header nav{
     display: flex;
     justify-content: space-between;
     background-color: #000;
@@ -11,9 +11,9 @@ header{
     height: auto;
     position: sticky;
     z-index: 105;
-    height: 40px;
+    height: 50px;
 }
-header i{
+.icons i{
     color: #fff;
 }
 nav ul{
@@ -24,8 +24,8 @@ nav ul{
 nav ul a{
     text-decoration: none;
     color: #cccccc;
-    padding: 0 6px;
-    font-size: 0.55rem;
+    padding: 0 8px;
+    font-size: 0.85rem;
     border-left: 1.5px solid #2d2d2d;
 }
 nav ul li:last-child a{
@@ -33,28 +33,219 @@ nav ul li:last-child a{
 }
 .menu-logo{
     color: #cccccc;
-    width: 30px;
-    height: 20px;
-    margin-right:20px;
-    padding: 1px 1px;
-    margin-top: 5px;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    margin-right:40px;
+    margin-top: 17px;
     cursor: pointer;
 }
+#x-logo{
+    display: none;
+}
+#x-logo i{
+    color: #c60a0a;
+}
 .logo-img{
-    margin-right: 80px;
-    width: 100px;
-    height: 30px;
+    margin-right: 110px;
+    font-size: 1.5rem;
+    width: 160px;
+    height: 32px;
     cursor: pointer;
 }
 
 .icons{
-    margin-left: 80px;
-    line-height: 40px;
+    margin-left: 100px;
+    line-height: 50px;
     box-sizing: border-box;
 }
-.icons i{
+nav .icons i{
     color: #cccccc;
-    width: 5px;
-    margin: 9px;
+    width: 10px;
+    margin: 12px;
     cursor: pointer;
+}
+.search-box{
+    width: 877px;
+    height: 512px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    z-index:3;
+}
+.ser::after{
+    background:url(../img/r51-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content:'';
+    width: 100%;
+    height: 580px;
+    z-index: 1;
+    position: absolute;
+    background-color: #fff0f0;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+.search-box input{
+    width: 100%;
+    height: 54px;
+    padding: 0 10px;
+    border: none;
+    font-size: 16px;
+    color: #666666;
+
+}
+.arroow-icon{
+    background-color: #ff0000;
+    width: 54px;
+    color: #fff;
+    font-size: 25px;
+    height: 54px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    margin-right: 20px;
+}
+.arroow-icon i{
+    line-height: 54px;
+}
+.dropdown-container{
+    z-index: 10;
+    background-color: #000000d3;
+    width: 100%;
+    height: 647px;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.drop-main{
+    display: flex;
+    width: 100%;
+    height: 548px;
+}
+.drop-item{
+    margin: 3px 5px;
+}
+.drop-item ul{
+    list-style: none;
+}
+.drop-item ul li a{
+    text-decoration: none;
+    color: #cccccc;
+}
+.item a{
+    transition: all 0.3s;
+}
+.item a:hover{
+    color: #c60a0a;
+}
+.drop-item ul li{
+    margin-top: 14px;
+}
+.header-item{
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: none;
+}
+.drop-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 29px;
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+.hot-topic ul{
+    display: flex;
+    list-style: none;
+}
+.hot-topic ul li a{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 12px;
+    margin: 0 10px;
+}
+.sup-but button{
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 0 10px;
+    background-color: #2d2d2d;
+}
+.sup-but button a{
+    text-decoration: none;
+    color: #cccccc;
+}
+@media (max-width: 1250px){
+    nav ul li{
+        display: none;
+    }
+    .icons .responsiv{
+        display: none;
+    }
+    .res-nav{
+        display: inline;
+    }
+    nav ul{
+        width: 60%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .menu-logo{
+        margin-right: 1.9rem;
+    }
+    .icons{
+        margin-left: 0.8rem;
+    }
+    .logo-img{
+        margin: 0;
+    }
+
+}
+
+@media (max-width:990px){
+    .search-box{
+        width: 511px;
+        height: 32px;
+        padding-top: 160px;
+        margin: 0 auto;
+    }
+    .banner-container .ser{
+        height: 350px;
+    }
+    .search-box input{
+        height: 32px;
+        font-size: 12px;
+        line-height: 32px;
+    }
+    .arroow-icon{
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+    }
+    .arroow-icon i{
+        line-height: 32px;
+    }
+    .ser::after{
+        height: 350px;
+    }
+}
+@media (max-width: 768px){
+    .ser::after{
+        height: 156px;
+    }
+    .search-box{
+        width: auto;
+        height: 74px;
+        padding-top: 42px;
+        margin: 0 38px;
+    }
 }

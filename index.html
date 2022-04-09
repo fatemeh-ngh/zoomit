@@ -13,8 +13,9 @@
         <header>
             <nav>
                 <ul>
-                    <li><img class="logo-img" src="./img/zoomit_logo_h.svg" alt="logo image"></li>
-                    <li><i class="fa-solid fa-bars menu-logo"></i></li>
+                    <li class="res-nav"><img class="logo-img" src="./img/zoomit_logo_h.svg" alt="logo image"></li>
+                    <li class="res-nav"><i id="humberger-menu" class="fa-solid fa-bars menu-logo"></i></li>
+                    <li id="x-logo" class="res-nav"><i class="fa-solid fa-x menu-logo"></i></li>
                     <li><a href="#">صفحه اصلی</a></li>
                     <li><a href="#">موبایل</a></li>
                     <li><a href="#">لپ تاپ</a></li>
@@ -27,26 +28,181 @@
                     <li><a href="#">تلويزيون</a></li>
                     <li><a href="#">بيشتر</a></li>
                 </ul>
+                <div class="icons">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-share-nodes responsiv"></i>
+                    <i class="fa-solid fa-magnifying-glass responsiv"></i>
+                </div>
             </nav>
-            <div class="icons">
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-solid fa-share-nodes"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="dropdown-container">
+                <div class="drop-main">
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">فناوری</a></li>
+                            <li class="item"><a href="#">موبايل</a></li>
+                            <li class="item"><a href="#">تبلت</a></li>
+                            <li class="item"><a href="#">لپ‌تاپ</a></li>
+                            <li class="item"><a href="#">گجت</a></li>
+                            <li class="item"><a href="#">پوشيدني‌ها</a></li>
+                            <li class="item"><a href="#">دوربين</a></li>
+                            <li class="item"><a href="#">واقعيت مجازی</a></li>
+                            <li class="item"><a href="#">هوش مصنوعی</a></li>
+                            <li class="item"><a href="#">اینترنت اشیا</a></li>
+                            <li class="item"><a href="#">اخبار فناوری ایران</a></li>
+                            <li class="item"><a href="#">گزارش مالی</a></li>
+                            <li class="item"><a href="#">رپورتاژ آگهی</a></li>
+                            <li class="item"><a href="#">لوازم خانگی</a></li>
+                            <li class="item"><a href="#">اینترنت و شبکه</a></li>
+                            <li class="item"><a href="#">امنیت</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">بررسی</a></li>
+                            <li class="item"><a href="#">بررسی موبایل</a></li>
+                            <li class="item"><a href="#">بررسی لپ تاپ</a></li>
+                            <li class="item"><a href="#">بررسی پوشیدنی ها</a></li>
+                            <li class="item"><a href="#">بررسی تبلت</a></li>
+                            <li class="item"><a href="#">بررسی تلویزیون</a></li>
+                            <li class="item"><a href="#">بررسی اسپیکر</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">راهنمای خرید</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">کسب و کار</a></li>
+                            <li class="item"><a href="#">بیوگرافی</a></li>
+                            <li class="item"><a href="#">تاریخچه</a></li>
+                            <li class="item"><a href="#">مصاحبه</a></li>
+                            <li class="item"><a href="#">بازاریابی اینترنتی</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">زوم پلاس</a></li>
+                            <li class="item"><a href="#">شاتر</a></li>
+                            <li class="item"><a href="#">پازل</a></li>
+                            <li class="item"><a href="#">معماری</a></li>
+                            <li class="item"><a href="#">گوناگون</a></li>
+                            <li class="item"><a href="#">بازی</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">آموزش</a></li>
+                            <li class="item"><a href="#">تلفن هوشمند / تبلت</a></li>
+                            <li class="item"><a href="#">آموزش کامپیوتر</a></li>
+                            <li class="item"><a href="#">صوتی و تصویری</a></li>
+                            <li class="item"><a href="#">آموزش عکاسی</a></li>
+                            <li class="item"><a href="#">بازاریابی اینترنتی</a></li>
+                            <li class="item"><a href="#">آموزش خودرو</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">ویدئو</a></li>
+                            <li class="item"><a href="#">بررسی ویدئویی</a></li>
+                            <li class="item"><a href="#">نگاه نزدیک</a></li>
+                            <li class="item"><a href="#">زوم کست</a></li>
+                            <li class="item"><a href="#">جعبه گشایی</a></li>
+                            <li class="item"><a href="#">گزارش ویدیویی</a></li>
+                            <li class="item"><a href="#">خودرو</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">خودرو</a></li>
+                            <li class="item"><a href="#">اخبار خودرو</a></li>
+                            <li class="item"><a href="#">مقالات خودرو</a></li>
+                            <li class="item"><a href="#">قیمت و شرایط فروش خودرو</a></li>
+                            <li class="item"><a href="#">آموزش خودرو</a></li>
+                            <li class="item"><a href="#">موتور اسپرت</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">بانک محصول</a></li>
+                            <li class="item"><a href="#">موبایل</a></li>
+                            <li class="item"><a href="#">تبلت</a></li>
+                            <li class="item"><a href="#">حافظه ذخیره سازی</a></li>
+                            <li class="item"><a href="#">پوشیدنی</a></li>
+                            <li class="item"><a href="#">هدست واقعیت مجازی</a></li>
+                            <li class="item"><a href="#">دوربین</a></li>
+                            <li class="item"><a href="#">لنز</a></li>
+                            <li class="item"><a href="#">کنسول</a></li>
+                            <li class="item"><a href="#">لپ تاپ</a></li>
+                            <li class="item"><a href="#">مانیتور</a></li>
+                            <li class="item"><a href="#">کارت گرافیک</a></li>
+                            <li class="item"><a href="#">خودرو</a></li>
+                            <li class="item"><a href="#">پردازنده</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">سخت افزار</a></li>
+                            <li class="item"><a href="#">کامپیوتر رومیزی</a></li>
+                            <li class="item"><a href="#">مانیتور</a></li>
+                            <li class="item"><a href="#">چاپگر، اسکنر</a></li>
+                            <li class="item"><a href="#">پردازنده</a></li>
+                            <li class="item"><a href="#">پردازنده گرافیکی</a></li>
+                            <li class="item"><a href="#">حافظه</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">علمی</a></li>
+                            <li class="item"><a href="#">نجوم</a></li>
+                            <li class="item"><a href="#">پزشکی و سلامت</a></li>
+                            <li class="item"><a href="#">علوم پایه و مهندسی</a></li>
+                            <li class="item"><a href="#">انرژی و محیط زیست</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-item">
+                        <ul>
+                            <li class="header-item"><a href="#">صوتی تصویری</a></li>
+                            <li class="item"><a href="#">تلویزیون</a></li>
+                            <li class="item"><a href="#">سیستم‌های صوتی</a></li>
+                            <li class="item"><a href="#">ویدیو پروژکتور</a></li>
+                            <li class="item"><a href="#">هدفون</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="drop-footer">
+                    <div class="hot-topic">
+                        <ul>
+                            <li><a href="#"> موضوعات داغ </a></li>
+                            <li><a href="#">ردمی نوت ۹ </a></li>
+                            <li><a href="#">گلکسی A51 </a></li>
+                            <li><a href="#">آیفون ۱۲ </a></li>
+                            <li><a href="#">قیمت PS5 </a></li>
+                            <li><a href="#">قیمت هندزفری</a></li>
+                        </ul>
+                    </div>
+                    <div class="sup-but">
+                        <button><a href="#">درباره ما</a></button>
+                        <button><a href="#">تماس با ما</a></button>
+                        <button><a href="#">تبلیغات</a></button>
+                        <button><a href="#">استخدام</a></button>
+                    </div>
+                </div>
             </div>
         </header>
-    
-
-
-
-
-
-
-        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-        <!-- <i class="fa-solid fa-share-nodes"></i> -->
-        <!-- <i class="fa-regular fa-user"></i> -->
-        <!-- <i class="fa-solid fa-bars"></i> -->
-        <!-- <i class="fa-solid fa-arrow-left"></i> -->
-        <!-- <i class="fa-solid fa-envelope"></i> -->
-        <!-- <i class="fa-solid fa-mobile-screen-button"></i> -->
+        <main>
+        <div class="banner-container">
+            <div class="ser">
+            <div class="search-box">
+                <input type="text" placeholder="محصول مورد نظر خود را بيابيد">
+                <div class="arroow-icon"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+        </div>
+        </div>
+        </main>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-mobile-screen-button"></i> -->
+        <script src="./main.js"></script>
     </body>
 </html>
